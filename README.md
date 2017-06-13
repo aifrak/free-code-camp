@@ -5,6 +5,8 @@ Repository containing the completed challenges made for [Free Code Camp](http://
 
 Click on <em>View</em> or <em>View on CodePen</em> to see the result of a challenge.
 
+[Profile on Free Code Camp](https://www.freecodecamp.com/aifrak "Profile")
+
 ## Challenges
 | Name          | Difficulty    | View          | View on CodePen | Comments |
 |:------------:|:-------------:|:--------------:|:---------------:|:--------:|
