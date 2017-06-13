@@ -3,6 +3,8 @@
 
 Repository containing the completed challenges made for [Free Code Camp](http://www.freecodecamp.com).
 
+Click on <em>View</em> or <em>View on CodePen</em> to see the result of a challenge.
+
 ## Challenges
 | Name          | Difficulty    | View          | View on CodePen | Comments |
 |:------------:|:-------------:|:--------------:|:---------------:|:--------:|
