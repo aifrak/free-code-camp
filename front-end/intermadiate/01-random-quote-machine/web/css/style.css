@@ -1,0 +1,115 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Raleway;
+    height: 100%;
+    margin: 0;
+    /* background gradient effect */
+    background: #3d0014;
+    background: -moz-linear-gradient(top, #3d0014 0%, #00011a 100%) fixed;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #3d0014), color-stop(100%, #00011a)) fixed;
+    background: -webkit-linear-gradient(top, #3d0014 0%, #00011a 100%) fixed;
+    background: -o-linear-gradient(top, #3d0014 0%, #00011a 100%) fixed;
+    background: -ms-linear-gradient(top, #3d0014 0%, #00011a 100%) fixed;
+    background: linear-gradient(to bottom, #3d0014 0%, #00011a 100%) fixed;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3d0014', endColorstr='#00011a', GradientType=0);
+}
+
+p {
+    font-size: 25px;
+}
+
+.container-fluid {
+    position: relative;
+    top: 15%;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.button-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.quote-container {
+    background: #FFF;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    font-size: 14px;
+    padding-left: 2px;
+    padding-right: 2px;
+    vertical-align: top;
+}
+
+.quote-author {
+    color: grey;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* BEGIN Adapted snippet from https://bootsnipp.com/snippets/featured/outline-square-buttons */
+
+.outlined {
+    border-radius: 0;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-submit {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.btn-submit:hover {
+    color: #000;
+    background: #FFF;
+    border-color: #FFF;
+}
+
+.btn-submit:active {
+    color: #FFF;
+    background: grey;
+    border-color: #FFF;
+}
+
+.icon-outlined {
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 12px 14px;
+}
+
+.icon-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-twitter {
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+}
+
+.icon-twitter:hover,
+.icon-twitter:active {
+    background: #555;
+    border-color: #555;
+    color: #FFF;
+}
+
+/* END */

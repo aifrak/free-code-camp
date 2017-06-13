@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Free Code Camp - Portofolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,400" rel="stylesheet" />
+    <link href="web/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<!-- navbar -->
+<nav class="navbar-container navbar navbar-default navbar-fixed-top">
+    <div class="hidden-xs col-sm-6 col-md-4 text-right navbar-title">
+        Franklin Rakotomalala
+    </div>
+    <div class="hidden-xs col-sm-6 col-md-7 text-right">
+        <a class="outlined link-top js-scrollTo" href="#about">About</a>
+        <a class="outlined link-top js-scrollTo" href="#portfolio">Portfolio</a>
+        <a class="outlined link-top js-scrollTo" href="#contact">Contact</a>
+    </div>
+    <div class="visible-xs col-xs-4 text-right navbar-title-xs">
+        Rakotomalala
+    </div>
+    <div class="visible-xs col-xs-8 text-right">
+        <a class="outlined link-top-xs js-scrollTo" href="#about">About</a>
+        <a class="outlined link-top-xs js-scrollTo" href="#portfolio">Portfolio</a>
+        <a class="outlined link-top-xs js-scrollTo" href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- main content -->
+<div class="container-fluid">
+    <div class="col-xs-12 middle-container img-rounded">
+
+        <!-- About section -->
+        <h1 class="text-center section-title">About</h1>
+        <a id="about" class="anchor"></a>
+
+        <div class="row-fluid">
+            <div class="col-sm-offset-1">
+                <div class="col-xd-12 col-sm-4 col-sm-push-7">
+                    <img class="img-circle img-responsive" src="web/img/profil.jpg" width="250" height="250">
+                </div>
+                <div class="col-xd-12 col-sm-7 col-sm-pull-4">
+                    <p class="about-description">
+                        My name is Franklin and I am a Software Engineer based in Frankfurt, Germany.
+                        <br><br> Currently working in a startup with technologies such as PHP, Propel, MySQL, JavaScript / jQuery and Foundation, I also worked previously in France on multiple J2EE projects using Spring, Hibernate, Struts2, JSF and Oracle.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separator -->
+        <div class="row-fluid">
+            <div class="col-xs-10 col-xs-offset-1">
+                <hr>
+            </div>
+            <div style="clear: both;"></div>
+
+            <!-- Portfolio section -->
+            <h1 class="text-center section-title">Portfolio</h1>
+            <a id="portfolio" class="anchor"></a>
+
+            <div class="row-fluid">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="img-thumbnail img-block">
+                        <a class="text-center" href="https://codepen.io/aifrak/pen/xVMmPO" target="_blank">
+                            <img class="img-responsive" src="web/img/tribute-page.JPG" alt="Tribute page">
+                            <p class="img-description text-center">Free Code Camp - "Tribute page"</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="img-thumbnail img-block">
+                        <a class="text-center" href="https://codepen.io/aifrak/pen/pbyboy" target="_blank">
+                            <img class="img-responsive" src="web/img/random-quote-machine.jpg" alt="Random quote machine">
+                            <p class="img-description text-center">Free Code Camp - "Random quote machine"</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="img-thumbnail img-block">
+                    <a class="text-center" href="https://codepen.io/aifrak/pen/NrdXBq" target="_blank">
+                        <img class="img-responsive" src="web/img/local-weather.jpg" alt="Coming soon">
+                        <p class="img-description text-center">Free Code Camp - "Show the Local Weather"</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="img-thumbnail img-block">
+                    <img class="img-responsive" src="web/img/coming-soon.jpg" alt="Coming soon">
+                    <p class="img-description text-center">Coming soon</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separator -->
+        <div class="row-fluid">
+            <div class="col-xs-10 col-xs-offset-1">
+                <hr>
+            </div>
+            <div style="clear: both;"></div>
+
+            <!-- Contact form -->
+            <h1 class="text-center section-title">Contact</h1>
+            <a id="contact" class="anchor"></a>
+
+            <div class="row-fluid">
+                <form action="" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-6">
+                            <input id="name" type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">Email</label>
+                        <div class="col-sm-6">
+                            <input id="email" type="email" class="form-control" placeholder="email@provider.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-3 control-label">Phone number</label>
+                        <div class="col-sm-6">
+                            <input id="phone" type="tel" class="form-control" placeholder="(+33)123456789" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-3 control-label">Message</label>
+                        <div class="col-sm-6">
+                            <textarea id="message" class="form-control" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" class="btn btn-lg outlined btn-submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row-fluid footer">
+    <div class="row-fluid">
+        <div class="col-xs-4 col-xs-offset-1 text-center">
+            <h1 class="text-center section-title">About this page</h1> Made by Franklin
+        </div>
+        <div class="col-xs-7 text-center">
+            <div class="col-xs-5 col-sm-1 col-sm-offset-1">
+                <a class="icon-link" href="https://www.linkedin.com/in/afrakoto/en" target="_blank">
+                    <i class="fa fa-linkedin fa-2x outlined icon-outlined icon-outlined-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-1 col-sm-offset-1">
+                <a class="icon-link" href="http://www.xing.to/afrakoto" target="_blank">
+                    <i class="fa fa-xing fa-2x outlined icon-outlined icon-outlined-xing" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-1 col-sm-offset-1">
+                <a class="icon-link" href="https://github.com/aifrak" target="_blank">
+                    <i class="fa fa-github fa-2x outlined icon-outlined icon-outlined-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="row-fluid">
+        <h4 class="text-center">Franklin Rakotomalala © 2016 All rights reserved</h4>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="web/js/script.js"></script>
+
+</body>
+
+</html>

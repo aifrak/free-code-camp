@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Code Camp - Wikipedia Viewer (VueJS)  </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://loading.io/css/loading.css">
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+
+<div id="searchModule" class="container-fluid">
+
+    <div class="row-fluid">
+        <div class="button-container col-xs-12 col-md-4 col-md-offset-4 text-center">
+
+            <div class="search-bar-container form-group">
+                <input id="searchBar" v-model.trim="searchBar" class="search-bar form-control" placeholder="Search on Wikipedia" maxlength="100" @keyup.enter="search">
+
+                <transition v-bind:css="false" @enter="showMiniSearch">
+                    <a id="miniSearch" class="input-group-addon search btn outlined btn-submit" href="#" @click="search" v-show="showMiniSearchButtons">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </transition>
+                <transition v-bind:css="false" @enter="showMiniSearch">
+                    <a id="miniRandom" v-show="showMiniSearchButtons" class="input-group-addon question btn outlined btn-submit" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                        <i class="fa fa-question" aria-hidden="true"></i>
+                    </a>
+                </transition>
+
+            </div>
+
+            <transition v-bind:css="false" @leave="hideSearch" @after-leave="getArticles()">
+                <div class="search-buttons" v-show="showSearchButtons">
+                    <a id="search" class="btn btn-lg outlined btn-submit" href="#" @click="search">
+                        <i class="fa fa-search" aria-hidden="true"></i> Search
+                    </a>
+                    <a id="random" class="btn btn-lg outlined btn-submit" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                        <i class="fa fa-question" aria-hidden="true"></i> Random
+                    </a>
+                </div>
+            </transition>
+
+        </div>
+    </div>
+
+    <div id="articles" v-if="!hasMessage()" v-show="articles.length > 0">
+        <div v-for="article in articles" class="row-fluid" @click="openArticle(article)">
+            <div class="article-container col-xs-12 col-md-8 col-md-offset-2">
+                <a href="{{ article.url }}" target="_blank">
+                    <p class="title">{{ article.title }}</p>
+                </a>
+                <div v-html="article.description"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="message" v-else>
+        <div class="row-fluid">
+            <div class="article-container col-xs-12 col-md-8 col-md-offset-2">
+                <div v-html="message" class="title text-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" v-show="loading">
+        <div class="row-fluid">
+            <div class="article-container col-xs-12 col-md-8 col-md-offset-2 text-center">
+                <div class="ld ld-ring ld-spin-fast"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/velocity/1.5/velocity.ui.min.js"></script>
+<script src="web/js/script.js"></script>
+
+</body>
+
+</html>

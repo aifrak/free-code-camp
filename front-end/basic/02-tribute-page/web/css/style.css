@@ -1,0 +1,40 @@
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.container-fluid {
+    background-color: #C8F7C5;
+}
+
+.img-block {
+    background-color: #22313F;
+    color: white;
+    padding: 4px;
+}
+
+.img-description {
+    padding: 15px 25px 0 25px;
+}
+
+.middle-container {
+    background-color: #FFFFFF;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.quote {
+    font-size: 1.5em;
+}
+
+.quote-author {
+    color: grey;
+    font-size: 1em;
+    font-style: italic;
+
+}

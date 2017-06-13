@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Code Camp - Show the Local Weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/font/weathericons-regular-webfont.svg">
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div id="weatherDiv" class="weather-container col-xs-12 col-sm-8 col-sm-offset-2 text-center" style="display: none;">
+            <div id="place" class="col-xs-12" style="visibility: hidden;">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> <span id="city"></span>, <span id="country"></span>
+            </div>
+            <div id="iconAndTemp" class="row-fluid" style="visibility: hidden;">
+                <div class="col-xs-5 vcenter">
+                    <span id="icon"></span>
+                </div><!-- DO NOT REMOVE and let it stuck to tags: Fix for inline-block
+     --><div class="col-xs-7 vcenter">
+                <div class="col-xs-12 temp-info">
+                    <span id="temp" class="lnum"></span><span id="tempUnit" class="lnum"></span>
+                </div>
+                <div class="col-xs-12 temp-change">
+                    <a id="celsius" class="disabled" href="#" onclick="fillTempsInCelsius(); return false;">°C</a> | <a id="fahrenheit" href="#" onclick="fillTempsInFahrenheit(); return false;">°F</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12">
+                <span id="desc" style="visibility: hidden;"></span>
+            </div>
+        </div>
+        <div id="loadingDiv" class="weather-container col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+            Getting your GPS coordinate. Please wait...<br>
+            Please let your browser get your GPS location.<br>
+            For smartphone, please activate your GPS.
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+<script src="web/js/script.js"></script>
+
+</body>
+
+</html>

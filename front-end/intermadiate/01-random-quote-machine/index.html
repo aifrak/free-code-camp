@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Code Camp - Random Quote Machine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="button-container col-xs-12 col-sm-4 col-sm-offset-4 text-center">
+            <button id="generateQuote" type="submit" class="btn btn-lg outlined btn-submit" onclick="generateQuote(); bounceButton(); return false;">Next quote</button>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div id="quoteDiv" class="quote-container col-xs-12 col-md-8 col-md-offset-2 text-center">
+            <p id="quote" class="text-center"></p>
+            <p id="author" class="text-center quote-author"></p>
+            <a id="twitter" class="icon-link" href="" target="_blank">
+                <i class="fa fa-twitter fa-2x outlined icon-outlined icon-twitter" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+<script src="web/js/script.js"></script>
+
+</body>
+
+</html>

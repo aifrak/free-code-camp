@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    height: 100%;
+    margin: 0;
+    /* background gradient effect */
+    background: #001738;
+    background: -moz-linear-gradient(top, #001738 0%, #006b66 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #001738), color-stop(100%, #006b66));
+    background: -webkit-linear-gradient(top, #001738 0%, #006b66 100%);
+    background: -o-linear-gradient(top, #001738 0%, #006b66 100%);
+    background: -ms-linear-gradient(top, #001738 0%, #006b66 100%);
+    background: linear-gradient(to bottom, #001738 0%, #006b66 100%);
+    filter: progid \: DXImageTransform\.Microsoft\.gradient( startColorstr='#001738', endColorstr='#006b66', GradientType=0 );
+}
+
+div {
+    font-size: 25px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.container-fluid {
+    position: relative;
+    top: 15%;
+}
+
+.temp-change {
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.temp-change a {
+    text-decoration: none !important;
+}
+
+.temp-change a.disabled {
+    color: #333;
+    cursor: text;
+}
+
+.temp-info {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 11vw;
+    font-weight: 100;
+}
+
+.weather-container {
+    background: #FFF;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#place {
+    font-size: 5vw;
+}
+
+#desc {
+    font-size: 4vw;
+}
+
+.wi {
+    font-size: 14vw;
+}
+
+@media (min-width: 1000px) {
+    .temp-info {
+        font-size: 100px;
+    }
+
+    #place {
+        font-size: 40px;
+    }
+
+    #desc {
+        font-size: 30px;
+    }
+
+    .temp-change {
+        font-size: 30px;
+    }
+
+    .wi {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    #loadingDiv {
+        font-size: 12px;
+    }
+}
+
+/* Align numbers for the Raleway font */
+
+.lnum {
+    font-variant-numeric: lining-nums;
+    -moz-font-feature-settings: "lnum" 1;
+    -moz-font-feature-settings: "lnum=1";
+    -ms-font-feature-settings: "lnum" 1;
+    -o-font-feature-settings: "lnum" 1;
+    -webkit-font-feature-settings: "lnum" 1;
+    font-feature-settings: "lnum" 1;
+}

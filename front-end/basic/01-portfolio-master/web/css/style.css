@@ -1,0 +1,227 @@
+body {
+    /* background gradient effect */
+    background: #cdffc9;
+    background: -moz-linear-gradient(top, #cdffc9 0%, #93cede 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #cdffc9), color-stop(100%, #93cede));
+    background: -webkit-linear-gradient(top, #cdffc9 0%, #93cede 100%);
+    background: -o-linear-gradient(top, #cdffc9 0%, #93cede 100%);
+    background: -ms-linear-gradient(top, #cdffc9 0%, #93cede 100%);
+    background: linear-gradient(to bottom, #cdffc9 0%, #93cede 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cdffc9', endColorstr='#93cede', GradientType=0);
+    font-family: Raleway, sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+}
+
+.img-block {
+    background-color: #22313F;
+    color: white;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+.img-block a {
+    text-decoration: none;
+}
+
+.img-description {
+    color: #FFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 10px 0 10px;
+}
+
+.navbar-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.50em;
+    margin-top: 7px;
+}
+
+.navbar-title-xs {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.15em;
+    margin-top: 6px;
+}
+
+.navbar-container {
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* shadow effect */
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.middle-container {
+    background-color: #FFFFFF;
+    margin-bottom: 55px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* shadow effect */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    padding-bottom: 25px;
+}
+
+.footer {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /* shadow effect */
+    box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+    padding-top: 20px;
+}
+
+.about-description {
+    padding-top: 25px;
+}
+
+
+/* BEGIN Overridden classes from Bootstrap */
+
+.container-fluid {
+    margin-top: 20px;
+    /* limit the width */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
+/* END */
+
+
+/* BEGIN Adapted snippet from https://bootsnipp.com/snippets/featured/outline-square-buttons */
+
+.outlined {
+    border-radius: 0;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+nav a {
+    background-color: transparent;
+    color: #738D70;
+}
+
+.link-top {
+    font-size: 18px;
+    line-height: 250%;
+    padding: 10px 16px;
+}
+
+.link-top-xs {
+    font-size: 14px;
+    line-height: 250%;
+    padding: 7px 7px;
+}
+
+.link-top:active,
+.link-top:hover,
+.link-top-xs:active,
+.link-top-xs:hover {
+    background: #90b18d;
+    border-color: #90b18d;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.btn-submit {
+    background-color: transparent;
+    border: 2px solid #93cede;
+    color: #93cede;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+    color: #FFF;
+    background: #93cede;
+    border-color: #93cede;
+}
+
+.icon-outlined {
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 17px 20px;
+}
+
+.icon-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-outlined-linkedin {
+    background-color: transparent;
+    border: 2px solid #217eff;
+    color: #217eff;
+}
+
+.icon-outlined-linkedin:hover,
+.icon-outlined-linkedin:active {
+    background: #217eff;
+    border-color: #217eff;
+    color: #FFF;
+}
+
+.icon-outlined-github {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.icon-outlined-github:hover,
+.icon-outlined-github:active {
+    background: #000;
+    border-color: #000;
+    color: #FFF;
+}
+
+.icon-outlined-xing {
+    background-color: transparent;
+    border: 2px solid #18513f;
+    color: #18513f;
+}
+
+.icon-outlined-xing:active,
+.icon-outlined-xing:hover {
+    background: #18513f;
+    border-color: #18513f;
+    color: #FFF;
+}
+
+
+/* END */
