@@ -1,7 +1,7 @@
 # Free Code Camp
 ---------------------------------------
 
-Repository containing the completed challenges made from [Free Code Camp](http://www.freecodecamp.com).
+Repository containing the completed challenges made for [Free Code Camp](http://www.freecodecamp.com).
 
 ## Challenges
 | Name          | Difficulty    | View          | View on CodePen | Comments |
