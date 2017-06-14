@@ -1,0 +1,18 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    height: 100%;
+    margin: 0;
+    /* background gradient effect */
+    background: #005e61;
+    background: -moz-linear-gradient(top, #005e61 0%, #001f47 100%) fixed;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #005e61), color-stop(100%, #001f47)) fixed;
+    background: -webkit-linear-gradient(top, #005e61 0%, #001f47 100%) fixed;
+    background: -o-linear-gradient(top, #005e61 0%, #001f47 100%) fixed;
+    background: -ms-linear-gradient(top, #005e61 0%, #001f47 100%) fixed;
+    background: linear-gradient(to bottom, #005e61 0%, #001f47 100%) fixed;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005e61', endColorstr='#001f47', GradientType=0);
+}

@@ -6,3 +6,6 @@
 .idea
 out
 gen
+
+/node_modules/*
+/package-lock.json
