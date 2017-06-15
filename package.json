@@ -1,0 +1,28 @@
+{
+  "name": "free-code-camp",
+  "version": "1.0.0",
+  "description": "Repository containing the completed challenges made for Free Code Camp.",
+  "main": "index.js",
+  "dependencies": {
+    "uikit": "^3.0.0-beta.25",
+    "vue": "^2.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aifrak/free-code-camp.git"
+  },
+  "keywords": [
+    "freecodecamp",
+    "free-code-camp"
+  ],
+  "author": "aifrak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aifrak/free-code-camp/issues"
+  },
+  "homepage": "https://github.com/aifrak/free-code-camp#readme"
+}
